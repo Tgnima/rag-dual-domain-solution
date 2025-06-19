@@ -1,0 +1,24 @@
+# Caches et artefacts Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environnement virtuel
+.venv/
+
+# Fichiers d'export / data
+*.csv
+*.json
+
+# Secrets locaux
+.env
+*.env
+
+# Logs
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db 

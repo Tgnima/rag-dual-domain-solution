@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  airtable-rag:
+    build: .
+    container_name: airtable-rag
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env  # Fichier contenant tes clés (non commitées)
+    restart: unless-stopped 

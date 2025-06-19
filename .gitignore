@@ -1,0 +1,38 @@
+# Environnement virtuel
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Fichiers de configuration locaux
+.env
+*.env
+
+# IDE / éditeurs
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Sorties builds / data
+*.csv
+*.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test caches
+.pytest_cache/
+
+# wheel / dist
+build/
+dist/
+*.egg-info/ 
