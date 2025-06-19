@@ -50,6 +50,24 @@ ANTHROPIC_API_KEY=...
 
 ---
 
+## 🧑‍💻 Cycle DEV rapide
+
+```bash
+# Nettoyer complètement les index Pinecone (⚠️ destructif)
+docker compose run --rm web python clear_pinecone.py --force
+
+# Ré-ingestion Prospects puis Candidats
+docker compose run --rm web python ingest.py
+docker compose run --rm web python ingest_candidates.py
+
+# (Re)démarrer l'interface
+docker compose restart web   # ou docker compose up web
+```
+
+Ces commandes utilisent l'image déjà construite : aucun rebuild n'est nécessaire, l'itération est donc quasi instantanée.
+
+---
+
 ## ⚙️ Utilisation sans Docker (optionnel)
 ```bash
 python -m venv .venv && source .venv/bin/activate  # (PowerShell : .venv\Scripts\Activate.ps1)
